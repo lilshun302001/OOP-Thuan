@@ -4,7 +4,7 @@ use dao\Database;
 require_once "Database.php";
 class datbaseDemo{
     private $data;
-    private $db;
+    // private $db;
     public function __construct()
     {   
         

@@ -2,6 +2,8 @@
 require_once"ProductDemo.php";
 require_once"Database.php";
 require_once"DatabaseDemo.php";
+
+use dao\Database;
 use demo\ProductDemo;
 use demo\datbaseDemo;
 
@@ -13,9 +15,10 @@ echo"cham";
 $doituong = new datbaseDemo();
 $doituong->insertTableTest();
 
-$doituong->selectTableTest();
-$doituong->updateTableTest();
-$doituong->initDatabase();
-$doituong->deleteTableTest();
-$doituong->updateTableTest();
+$doituong->selectTableTest($result);
+
+$doituong = new Database();
+echo $doituong->insertTable();
+
+
 // echo "name:".$data.'</br>';
